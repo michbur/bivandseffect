@@ -25,7 +25,7 @@ prop_df <- inner_join(group_by(arts, YEAR) %>%
   filter(YEAR != 2020)
 
 
-png("bivands_effect.png", height = 480, width = 480)
+png("bivands_effect.png", height = 480, width = 680)
 ggplot(prop_df, aes(x = YEAR, y = prop, fill = editor, label = lab)) +
   geom_col() +
   geom_label(show.legend = FALSE) +
